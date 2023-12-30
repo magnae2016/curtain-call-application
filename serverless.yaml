@@ -12,21 +12,21 @@ functions:
   function1:
     handler: dist/function1/src/main.handler
     events:
-      - http:
+      - httpApi:
           method: GET
           path: /function1
 
   function2:
     handler: dist/function2/src/main.handler
     events:
-      - http:
+      - httpApi:
           method: GET
           path: /function2
 
   function3:
     handler: dist/function3/src/main.handler
     events:
-      - http:
+      - httpApi:
           method: GET
           path: /function3
 
