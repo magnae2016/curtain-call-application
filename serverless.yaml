@@ -13,8 +13,8 @@ functions:
     handler: dist/function1/src/main.handler
     events:
       - httpApi:
-          method: GET
-          path: /function1
+          method: POST
+          path: /users
 
   function2:
     handler: dist/function2/src/main.handler

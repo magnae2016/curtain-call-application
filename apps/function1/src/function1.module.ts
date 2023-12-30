@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
-import { Function1Controller } from './function1.controller';
 import { Function1Service } from './function1.service';
+import { CqrsModule } from '@nestjs/cqrs';
+import { CreateUserHandler } from './application/command/create-user.handler';
 
 @Module({
-  imports: [],
-  controllers: [Function1Controller],
-  providers: [Function1Service],
+  imports: [CqrsModule],
+  controllers: [],
+  providers: [Function1Service, CreateUserHandler],
 })
 export class Function1Module {}
